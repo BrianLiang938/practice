@@ -9,4 +9,7 @@ class Solution:
                 right = pivot - 1
             else:
                 left = pivot + 1
-        return -1
+        if nums[pivot] > target:
+            return pivot
+        else:
+            return pivot + 1
