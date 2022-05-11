@@ -1,4 +1,3 @@
 # LeetCode Practice Repo
 
-Java
-Python
+Java & Python
