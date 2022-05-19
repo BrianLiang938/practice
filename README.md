@@ -1,3 +1,9 @@
 # LeetCode Practice Repo
 
-Java & Python
+Python: 
+- DFS
+- DP
+- BFS (soon)
+
+Java:
+- TBD
