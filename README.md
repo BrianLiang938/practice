@@ -1,9 +1,9 @@
 # LeetCode Practice Repo
 
 Python: 
-- DFS
-- DP
-- BFS (soon)
+- ALGO 1 DONE
+- DS 1 DONE
+- ALGO 2 WIP
 
 Java:
 - TBD
