@@ -1,18 +1,9 @@
 class Solution:
-    def wordBreak(self, s: str, wordDict: List[str]) -> bool:
-        return self.lookUp(s, wordDict)
-    def lookUp(self, s, wordDict):
-        flag = 0
-        print("s", s)
-        if len(s) == 0:
-            print("ehre")
-            return 1
-        else:
-            for n in range(len(wordDict)):
-                if wordDict[n][0] == s[0] and len(wordDict[n]) < len(s):
-                    if len(wordDict[n] == )
-                    flag = self.lookUp(s[len(wordDict[n]):], wordDict)
-                    if flag == 1:
-                        return 1
-            return 0
-            
+    def word_break(s, words):
+        d = [False] * len(s)    
+        for i in range(len(s)):
+            for w in words:
+                # runs and checks for substring inorder and then checks if prev substring is possible
+                if w == s[i-len(w)+1:i+1] and (d[i-len(w)] or i-len(w) == -1):
+                    d[i] = True
+        return d[-1]
